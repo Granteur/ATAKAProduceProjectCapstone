@@ -27,9 +27,10 @@ export class ContactusComponent implements OnInit {
           mapOptions);
         marker.setMap(map);
       }
-      init_map1();
 
+      init_map1();
     });
+
   }
 
 
