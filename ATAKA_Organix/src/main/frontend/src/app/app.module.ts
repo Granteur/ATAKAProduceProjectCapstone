@@ -10,7 +10,6 @@ import { FooterComponent } from './footer/footer.component';
 import { ProductComponent } from './product/product.component';
 import { ContactusComponent } from './contactus/contactus.component';
 import { HomeComponent } from './home/home.component';
-import { ProductListComponent } from './product-list/product-list.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +20,7 @@ import { ProductListComponent } from './product-list/product-list.component';
     ProductComponent,
     ContactusComponent,
     HomeComponent,
-    ProductListComponent
+
   ],
   imports: [
     BrowserModule,
