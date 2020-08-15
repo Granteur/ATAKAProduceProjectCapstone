@@ -12,3 +12,46 @@
     font-size: 27px;
     padding: 10px;
 }
+.parallax {
+    /* The image used */
+    background-image: url("../../assets/chantal-garnier-oiIJ5jGijdQ-unsplash.jpg");
+  
+    /* Set a specific height */
+    height: 150px;
+     width: 100%;
+      
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: 50% 50%;
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+
+margin: 0;
+padding: 0;
+border: 0; 
+ }
+
+  h1 {
+    color: #FADCAC;
+    font-size: 85px;
+    text-shadow: 5px 5px #197163;
+    position: center;
+    font-family: 'Abril Fatface', cursive;
+    margin-bottom: 0.5em;
+  }
+  .banner {
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 100%;
+    color: #fff;
+    text-align: center;
+    z-index: 1;
+  }
+  .header-area {
+    position: relative;
+    height: 45vh;
+    /* background-position: center center; */
+    background-repeat: no-repear;
+    background-size: cover;
+  }

@@ -54,7 +54,8 @@ ul{
 
 
 .our-webcoderskull{
-  background: url("../assests/chantal-garnier-910GanwBoew-unsplash.jpg") no-repeat center top / cover;
+  /* background: url("assets/chantal-garnier-910GanwBoew-unsplash.jpg") no-repeat center top / cover; */
+  background-color: #065446;
   
 }
 .our-webcoderskull .cnt-block{ 
@@ -64,7 +65,7 @@ ul{
    padding:30px 20px; 
    text-align:center; 
    border:2px solid #d5d5d5;
-   margin: 0 0 28px;
+   margin: 20 20 28px;
 }
 .our-webcoderskull .cnt-block figure{
    width:148px; 
@@ -116,7 +117,7 @@ ul{
 
 .parallax {
     /* The image used */
-    background-image: url("../assests/chantal-garnier-oiIJ5jGijdQ-unsplash.jpg");
+    background-image: url("../../assets/chantal-garnier-oiIJ5jGijdQ-unsplash.jpg");
   
     /* Set a specific height */
     height: 500px;

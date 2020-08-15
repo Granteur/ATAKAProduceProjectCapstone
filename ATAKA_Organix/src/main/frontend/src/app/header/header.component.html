@@ -1,34 +1,7 @@
-<!-- <nav class="navbar navbar-expand-md bg-dark navbar-dark ">
-    <a class="navbar-brand" href="#">Angular Bootstrap Demo</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
-        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarCollapse">
-        <ul class="navbar-nav mr-auto">
-
-            <li class="nav-item">
-                <a class="nav-link" routerLink="/home">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" routerLink="/products">Products</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" routerLink="/contact-us">Contact Us</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" routerLink="/login">Log In</a>
-            </li>
-
-
-        </ul>
-    </div>
-</nav> -->
-
 <header class="header-area overlay">
     <nav class="navbar navbar-expand-md navbar-dark">
         <div class="container">
-            <a href="#" class="navbar-brand">ATAKA Organix</a>
+            <a routerLink="/home" class="navbar-brand"><img src="../../assets/smallLogo.png" alt=""></a>
 
             <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#main-nav">
                 <span class="menu-icon-bar"></span>
@@ -41,15 +14,15 @@
                     <li><a routerLink="/home" class="nav-item nav-link active">Home</a></li>
                     <li><a routerLink="/products" class="nav-item nav-link">Products</a></li>
                     <li><a routerLink="/contact-us" class="nav-item nav-link">Contact Us</a></li>
-                    <li><a routerLink="/contact-us" class="nav-item nav-link"><img src="../assests/cartIcon.png"
+                    <li><a routerLink="/shoppingcart" class="nav-item nav-link"><img src="../../assets/cartIcon.png"
                                 alt="Checkout"></a></li>
 
                     <li class="dropdown">
-                        <a href="#" class="nav-item nav-link" data-toggle="dropdown"><img src="../assests/userIcon.png"
-                                alt="User"></a>
+                        <a href="#" class="nav-item nav-link" data-toggle="dropdown"><img
+                                src="../../assets/userIcon.png" alt="User"></a>
                         <div class="dropdown-menu">
-                            <a href="#" class="dropdown-item">Log In</a>
-                            <a href="#" class="dropdown-item">Register</a>
+                            <a class="dropdown-item" data-toggle="modal" data-target="#myModal">Log In</a>
+                            <a class="dropdown-item" data-toggle="modal" data-target="#myModal2">Register</a>
 
                         </div>
                     </li>
@@ -57,6 +30,99 @@
             </div>
         </div>
     </nav>
-    <div>
-        <br>
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel">Login form</h4>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="email">Email address</label>
+                            <div class="input-group pb-modalreglog-input-group">
+                                <input type="email" class="form-control" id="email" placeholder="Email">
+                                <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <div class="input-group pb-modalreglog-input-group">
+                                <input type="password" class="form-control" id="pws" placeholder="Password">
+                                <span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Log in</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel">Registration form</h4>
+                </div>
+                <div class="modal-body">
+                    <form class="pb-modalreglog-form-reg">
+                        <div class="form-group">
+                            <div id="pb-modalreglog-progressbar"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email address</label>
+                            <div class="input-group pb-modalreglog-input-group">
+                                <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+                                <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <div class="input-group pb-modalreglog-input-group">
+                                <span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+                                <input type="password" class="form-control" id="inputPws" placeholder="Password">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="confirmpassword">Confirm password</label>
+                            <div class="input-group pb-modalreglog-input-group">
+                                <span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+                                <input type="password" class="form-control" id="inputConfirmPws"
+                                    placeholder="Confirm Password">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="country">Country</label>
+                            <div class="input-group pb-modalreglog-input-group">
+                                <span class="input-group-addon"><span class="glyphicon glyphicon-globe"></span></span>
+                                <input type="text" class="form-control" id="countries" placeholder="Country">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="age">Age</label>
+                            <div class="input-group pb-modalreglog-input-group">
+                                <input id="age">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="checkbox" id="ch" name="chs">
+                            I agree with <a href="#">terms and conditions.</a>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Sign up</button>
+                </div>
+            </div>
+        </div>
     </div>
