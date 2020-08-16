@@ -143,7 +143,7 @@ border: 0;
     margin-bottom: 0.5em;
   }
   p{
-      color: white;
+      color: #197163;
   }
   .banner {
     display: flex;
@@ -162,7 +162,7 @@ border: 0;
   }
   .header-area {
     position: relative;
-    height: 100vh;
+    height: 125vh;
     /* background-position: center center; */
     background-repeat: no-repear;
     background-size: cover;
